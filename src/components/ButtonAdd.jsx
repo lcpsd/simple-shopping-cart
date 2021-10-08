@@ -1,6 +1,6 @@
-export function ButtonAdd(){
+export function ButtonAdd({type}){
 
     return(
-        <div></div>
+        <button type={type}>ADD</button>
     )
 }
