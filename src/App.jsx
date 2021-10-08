@@ -1,6 +1,11 @@
+import { Home } from "./components/Home";
+import { CartContext } from "./context/CartContext";
+
 function App() {
   return (
-    <div></div>
+    <CartContext>
+      <Home/>
+    </CartContext>
   );
 }
 
