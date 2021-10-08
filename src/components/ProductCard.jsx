@@ -1,4 +1,4 @@
-export function Products(){
+export function ProductCard(){
 
     return(
         <div></div>

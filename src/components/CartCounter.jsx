@@ -1,6 +1,10 @@
-export function Products(){
+import useCart from '../hooks/useCart'
+
+export function CartCounter(){
+
+    const {cartItems} = useCart()
 
     return(
-        <div></div>
+        <span>{cartItems.length}</span>
     )
 }

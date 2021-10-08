@@ -1,5 +1,5 @@
-export function Products(){
-
+export function Cart(){
+    
     return(
         <div></div>
     )

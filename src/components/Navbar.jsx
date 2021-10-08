@@ -1,6 +1,10 @@
-export function Products(){
+import { CartCounter } from "./CartCounter";
+
+export function Navbar(){
 
     return(
-        <div></div>
+        <div>
+            <CartCounter/>
+        </div>
     )
 }

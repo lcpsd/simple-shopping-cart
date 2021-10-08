@@ -1,11 +1,11 @@
 import { Home } from "./components/Home";
-import { CartContext } from "./context/CartContext";
+import { CartContextProvider } from "./context/CartContext";
 
 function App() {
   return (
-    <CartContext>
+    <CartContextProvider>
       <Home/>
-    </CartContext>
+    </CartContextProvider>
   );
 }
 
