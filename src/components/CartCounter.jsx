@@ -2,9 +2,13 @@ import useCart from '../hooks/useCart'
 
 export function CartCounter(){
 
-    const {cartItems} = useCart()
+    const {cartItems, setCartVisibility, cartIsVisibe} = useCart()
+
+    function toggleCartVisibility(){
+        cartIsVisibe ? setCartVisibility(false) : setCartVisibility(true) 
+    }
 
     return(
-        <span>{cartItems.length}</span>
+        <div onClick={toggleCartVisibility}>{cartItems.length}</div>
     )
 }

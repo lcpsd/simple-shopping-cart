@@ -5,7 +5,7 @@ import {ButtonAdd} from '../components/ButtonAdd'
 
 export function Products(){
 
-    const {cartItems, setCartItems} = useCart()
+    const {cartItems, setCartItems} = useCart([])
     
     const [productList, setProductList] = useState([])
 
@@ -13,8 +13,11 @@ export function Products(){
     
     function handleSetProductToCart(event, obj){
         event.preventDefault()
-        console.log(obj)
-        setCartItems([...cartItems, obj])
+
+        const added = cartItems.some(item => item.id === obj.id)
+
+        if(!added) setCartItems([...cartItems, obj])
+        return
     }
 
     useEffect(() => {
@@ -28,6 +31,7 @@ export function Products(){
         <div>
             {  
                 productList.map(product => {
+
                     if(product){
                         return (
                             <form key={product.id} onSubmit={(event) => handleSetProductToCart(event, {...product, itemQty})}>
