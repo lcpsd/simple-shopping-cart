@@ -9,11 +9,13 @@ export function Cart(){
             {
                 cartItems.map(cartItem => {
                     if(cartItem && cartIsVisibe){
-                        return <div key={cartItem.id}>
+                        return (
+                        <div key={cartItem.id}>
                             <h2>{cartItem.title}</h2>
                             <span>{cartItem.itemQty}</span>
                             <span>{cartItem.value}</span>
                         </div>
+                        )
                     }
                     return <div></div>
                 })
