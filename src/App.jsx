@@ -1,5 +1,6 @@
 import { Home } from "./components/Home";
 import { CartContextProvider } from "./context/CartContext";
+import '../src/styles/global.scss'
 
 function App() {
   return (
