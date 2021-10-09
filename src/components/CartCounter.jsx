@@ -5,7 +5,8 @@ export function CartCounter(){
     const {cartItems, setCartVisibility, cartIsVisibe} = useCart()
 
     function toggleCartVisibility(){
-        cartIsVisibe ? setCartVisibility(false) : setCartVisibility(true) 
+        if(cartItems.length)
+        cartIsVisibe ? setCartVisibility(false) : setCartVisibility(true)
     }
 
     return(
