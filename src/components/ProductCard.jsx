@@ -12,8 +12,9 @@ export function ProductCard({product}){
 
         const added = cartItems.some(item => item.id === obj.id)
 
-        if(!added) setCartItems([...cartItems, obj])
-        return
+        if(!added) return setCartItems([...cartItems, obj])
+        
+        return window.confirm("Item já adicionado!")
     }
 
     return(
