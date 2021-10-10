@@ -1,8 +1,10 @@
 .navbar{
-
+    position: fixed;
+    width: 100vw;
     background: rgb(26, 26, 26);
     border-bottom: 1px solid rgb(36, 36, 36);
     height: 50px;
+    z-index: 3000;
 
     .navbar-container{
         margin: 0  auto;
