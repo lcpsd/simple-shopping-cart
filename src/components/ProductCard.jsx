@@ -30,7 +30,7 @@ export function ProductCard({product}){
                 <h2>{product.title}</h2>
                 <p>{product.description}</p>
                 <img src={product.thumb} alt="" />
-                <div className="product-price">R${product.value}</div>
+                <div className="product-price">{product.value.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</div>
                 <input type="number" min="1" max="5"
                 onChange={event => setItemQuantity(event.target.value)} 
                 onKeyDown={(event) => handlePreventUserKeydown(event)}
