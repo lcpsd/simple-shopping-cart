@@ -11,9 +11,11 @@ export function CartCounter(){
     }
 
     return(
-        <div onClick={toggleCartVisibility}>
-            {cartItems.length}
-            <img src={shoppingCartIcon} alt="" />
+        <div>
+            <span onClick={toggleCartVisibility}>
+                {cartItems.length}
+                <img src={shoppingCartIcon} alt="" />
+            </span>
         </div>
     )
 }

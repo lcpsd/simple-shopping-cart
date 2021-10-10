@@ -7,8 +7,12 @@ export function CartContextProvider(props){
     const [cartItems, setCartItems] = useState([])
     const [cartIsVisibe, setCartVisibility] = useState(false)
 
+    let cartSum = 0
+    cartItems.map(item => cartSum += parseFloat(item.value))
+    
+
     return(
-        <CartContext.Provider value={{cartItems, setCartItems, cartIsVisibe, setCartVisibility}}>
+        <CartContext.Provider value={{cartItems, setCartItems, cartIsVisibe, setCartVisibility, cartSum}}>
             {props.children}
         </CartContext.Provider>
     )

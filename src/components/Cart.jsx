@@ -2,6 +2,7 @@ import useCart from "../hooks/useCart"
 import {ButtonRemove} from "../components/ButtonRemove"
 import arrowIcon from '../public/right-arrow.png'
 import '../styles/cart.scss'
+import { SumItems } from "./SumItems"
 
 export function Cart(){
 
@@ -49,6 +50,8 @@ export function Cart(){
                             <div></div>
                         }
                     </div>
+                    
+                    <SumItems/>
 
                     <div id="cart-border">
                     </div>
