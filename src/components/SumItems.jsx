@@ -7,7 +7,7 @@ export function SumItems({isVisible}){
 
     return(
         <div id="sum-items" className={isVisible}>
-            Total: R${cartSum}
+            Total: {cartSum.toLocaleString('us',{style: 'currency', currency: 'USD'})}
         </div>
     )
 }
