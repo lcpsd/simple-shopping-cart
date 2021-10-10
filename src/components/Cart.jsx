@@ -29,32 +29,31 @@ export function Cart(){
         <>
             <div id="cart-container" className={classVisible}>
 
-                <img src={arrowIcon} alt="" onClick={handleCartCollapse}/>
+                <span className="cart-flex">
+                    <img src={arrowIcon} alt="" onClick={handleCartCollapse}/>
 
-                <h3>SHOPPING CART</h3>
-                {   
-                    cartItems.length ?
-                    cartItems.map(cartItem => {
-                            return (
-                            <form className="cart-item" key={cartItem.id} onSubmit={
-                                (event) => handleRemoveSelf(event, cartItem.id)
-                            }>
-                                <h3>{cartItem.title}</h3>
-                                <p>Quantity: {cartItem.itemQty}</p>
-                                <span>{cartItem.value.toLocaleString('us',{style: 'currency', currency: 'USD'})}</span>
-                                <ButtonRemove type="submit"/>
-                            </form>
-                            )
-                    }) 
-                    : 
-                    <div></div>
-                }
+                    <h3>SHOPPING CART</h3>
+                    {   
+                        cartItems.length ?
+                        cartItems.map(cartItem => {
+                                return (
+                                <form className="cart-item" key={cartItem.id} onSubmit={
+                                    (event) => handleRemoveSelf(event, cartItem.id)
+                                }>
+                                    <h3>{cartItem.title}</h3>
+                                    <p>Quantity: {cartItem.itemQty}</p>
+                                    <span>{cartItem.value.toLocaleString('us',{style: 'currency', currency: 'USD'})}</span>
+                                    <ButtonRemove type="submit"/>
+                                </form>
+                                )
+                        }) 
+                        : 
+                        <div></div>
+                    }
+                </span>
             </div>
             
             <SumItems isVisible={classVisible}/>
-
-            <div id="cart-border" className={classVisible}>
-            </div>
         </>
 
         
