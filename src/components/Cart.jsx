@@ -41,7 +41,7 @@ export function Cart(){
                             }>
                                 <h3>{cartItem.title}</h3>
                                 <p>Quantity: {cartItem.itemQty}</p>
-                                <span>{cartItem.value.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</span>
+                                <span>{cartItem.value.toLocaleString('us',{style: 'currency', currency: 'USD'})}</span>
                                 <ButtonRemove type="submit"/>
                             </form>
                             )
