@@ -2,20 +2,24 @@ import useCart from "../hooks/useCart"
 import {ButtonAdd} from '../components/ButtonAdd'
 import { useState } from "react"
 import '../styles/productCard.scss'
+import { useAlert } from "../hooks/useAlert"
 
 export function ProductCard({product}){
 
-    const {cartItems, setCartItems} = useCart([])
+    const {cartItems, setCartItems} = useCart()
+    const {showAlert} = useAlert()
+
     const [itemQty, setItemQuantity] = useState(1)
 
     function handleSetProductToCart(event, obj){
+        
         event.preventDefault()
 
         const added = cartItems.some(item => item.id === obj.id)
 
         if(!added) return setCartItems([...cartItems, obj])
         
-        return window.confirm("Item já adicionado!")
+        return showAlert('Item aready added to cart!')
     }
 
     function handlePreventUserKeydown(event){
