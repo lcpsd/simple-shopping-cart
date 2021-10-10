@@ -12,3 +12,23 @@ body{
     flex-direction: column;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(36, 36, 36);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #4400FF;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3100b9;
+  }

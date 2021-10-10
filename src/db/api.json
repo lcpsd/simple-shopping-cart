@@ -16,16 +16,16 @@
         },
         {
             "id":3,
-            "title":"Boneco raro do Super 15",
+            "title":"Gear 5 PC Game (Fisical)",
             "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper nulla in justo finibus sodales. Nulla facilisi. Vivamus sodales viverra tempus. Suspendisse a luctus metus",
-            "thumb":"https://cf.shopee.com.br/file/3458058549b0d68b5138b81d15931777",
+            "thumb":"https://i.ibb.co/mR9gZrv/gears5.jpg",
             "value":500.00
         },
         {
             "id":4,
-            "title":"Fantasia do patati",
+            "title":"Horizon Forbidden West (PS4 - Fisical)",
             "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper nulla in justo finibus sodales. Nulla facilisi. Vivamus sodales viverra tempus. Suspendisse a luctus metus",
-            "thumb":"https://cf.shopee.com.br/file/0f3ee9d0bfa67b7e56cf8a19f506d2f2",
+            "thumb":"https://image.api.playstation.com/vulcan/ap/rnd/202107/3100/ki0STHGAkIF06Q4AU8Ow4OkV.png",
             "value":99.90
         }
     ]
