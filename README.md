@@ -4,10 +4,6 @@ A simple project about a shopping cart to training responsivity, react context, 
 # Screenshot
 ![alt text](https://i.imgur.com/4B2ufJL.png)
 
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
