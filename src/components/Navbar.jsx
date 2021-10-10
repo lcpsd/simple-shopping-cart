@@ -12,8 +12,9 @@ export function Navbar(){
 
     return(
         <div className="navbar"onClick={()=> toggleCartVisibility()}>
-            
-            <CartCounter/>
+            <div className="navbar-container">
+                <CartCounter/>
+            </div>
         </div>
     )
 }

@@ -12,18 +12,23 @@ export function CartCounter(){
     }
 
     return(
-        <div id="cartCounter">
+        <div id="cart-counter">
             <div id="logo">
                 <span>XingLing</span> Store
             </div>
-            <span onClick={toggleCartVisibility}>
-                {cartItems.length}
+            <span id="cart-section" onClick={toggleCartVisibility}>
+                <p>{cartItems.length}</p>
                 <img src={shoppingCartIcon} alt="" />
-                <span id="go-to-cart-badge">
-                    Go to cart
-                </span>
+                {
+                    cartItems.length > 0 ?
+                    <div id="cart-badge" >
+                        Check Cart
+                    </div>
+                    :
+                    ''
+                }
             </span>
-            
+    
         </div>
     )
 }

@@ -1,34 +1,36 @@
-#cartCounter{
-    overflow: hidden;
-    position: relative;
-    span{
-        
-        img{
-            margin-right: 110px;
-            cursor: pointer;
-        }
+#cart-counter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    color: #ffff;
 
+    #logo{
+        span{
+            color: #4400FF;
+            font-weight: bold;
+        }
+    }
+
+    #cart-section{
+        
         display: flex;
         align-items: center;
+        font-size: 15px;
+        font-weight: bold;
 
-        #go-to-cart-badge{
-            position: absolute;
-            width: 100px;
-            right: -100px;
-            transition: right ease-in-out 0.2s;
+        #cart-badge{
             background: #4400FF;
-            margin-left: 10px;
             padding: 5px;
+            margin-left: 5px;
             border-radius: 5px;
             cursor: pointer;
         }
-
-        &:hover{
-            #go-to-cart-badge{
-                right:0px;
-            }
+        
+        img{
+            height: 30px;
+            cursor: pointer;
         }
-
-
     }
+
 }
