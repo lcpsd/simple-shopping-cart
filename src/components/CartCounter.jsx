@@ -19,14 +19,11 @@ export function CartCounter(){
             <span id="cart-section" onClick={toggleCartVisibility}>
                 <p>{cartItems.length}</p>
                 <img src={shoppingCartIcon} alt="" />
-                {
-                    cartItems.length > 0 ?
-                    <div id="cart-badge" >
+
+                    <div id="cart-badge" 
+                    className={cartItems.length > 0 ? 'badge-enable' : 'badge-disable'}>
                         Check Cart
                     </div>
-                    :
-                    ''
-                }
             </span>
     
         </div>
