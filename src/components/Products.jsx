@@ -2,6 +2,7 @@ import axios from "axios"
 import { useEffect } from "react"
 import {useProductList} from "../hooks/useProductsList"
 import { ProductCard } from "./ProductCard"
+import '../styles/products.scss'
 
 export function Products(){
 

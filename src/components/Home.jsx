@@ -6,7 +6,7 @@ import { ProductsListProvider } from "../context/ProductsListContext";
 export function Home(){
 
     return(
-        <div>
+        <div className="container-global">
             <ProductsListProvider>
                 <Navbar/>
                 <Products/>

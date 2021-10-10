@@ -1,9 +1,10 @@
 import { CartCounter } from "./CartCounter";
+import '../styles/navbar.scss'
 
 export function Navbar(){
 
     return(
-        <div>
+        <div className="navbar">
             <CartCounter/>
         </div>
     )
