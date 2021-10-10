@@ -4,6 +4,8 @@
     max-width: 500px;
     margin: 0 auto;
 
+    transition: transform ease-in-out 0.2s;
+
     .product-card-info{
         display: flex;
         flex-direction: column;
@@ -60,5 +62,9 @@
         font-size: 20px;
         color: #fff;
         cursor: pointer;
+    }
+    
+    &:hover{
+        transform: scale(1.05);
     }
 }
