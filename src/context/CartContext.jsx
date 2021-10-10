@@ -8,7 +8,7 @@ export function CartContextProvider(props){
     const [cartIsVisibe, setCartVisibility] = useState(false)
 
     let cartSum = 0
-    cartItems.map(item => cartSum += parseFloat(item.value))
+    cartItems.map(item => cartSum += parseFloat(item.value)*item.itemQty)
     
 
     return(
