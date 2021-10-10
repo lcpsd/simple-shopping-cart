@@ -4,6 +4,7 @@
     align-items: center;
     height: 100%;
     color: #ffff;
+    position: relative;
 
     #logo{
         span{
@@ -30,13 +31,13 @@
             &.badge-disable{
                 position: absolute;
                 top: -300px;
-                right: 220px;
+                right: 250px;
             }
 
             &.badge-enable{
                 position: absolute;
                 top: 10px;
-                right: 220px;
+                right: 250px;
             }
         }
         
@@ -105,6 +106,26 @@
                     position: absolute;
                     top: 10px;
                     right: 55px;
+                }
+            }
+        }
+    }
+}
+
+//ultra large devices
+@media (min-width: 1440px) { 
+    #cart-counter{
+        #cart-section{
+            #cart-badge{
+                &.badge-disable{
+                    position: absolute;
+                    top: -300px;
+                    right: 60px;
+                }
+    
+                &.badge-enable{
+                    position: absolute;
+                    right: 60px;
                 }
             }
         }
