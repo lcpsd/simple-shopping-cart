@@ -1,0 +1,33 @@
+#cartCounter{
+    overflow: hidden;
+    position: relative;
+    span{
+        
+        img{
+            margin-right: 110px;
+            cursor: pointer;
+        }
+
+        display: flex;
+        align-items: center;
+
+        #go-to-cart-badge{
+            position: absolute;
+            width: 100px;
+            right: -100px;
+            transition: right ease-in-out 0.2s;
+            background: #4400FF;
+            margin-left: 10px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        &:hover{
+            #go-to-cart-badge{
+                right:0px;
+            }
+        }
+
+
+    }
+}

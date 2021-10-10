@@ -1,4 +1,5 @@
 import useCart from '../hooks/useCart'
+import '../styles/cartCounter.scss'
 import shoppingCartIcon from '../public/shopping-cart.png'
 
 export function CartCounter(){
@@ -11,11 +12,15 @@ export function CartCounter(){
     }
 
     return(
-        <div>
+        <div id="cartCounter">
             <span onClick={toggleCartVisibility}>
                 {cartItems.length}
                 <img src={shoppingCartIcon} alt="" />
+                <span id="go-to-cart-badge">
+                    Go to cart
+                </span>
             </span>
+            
         </div>
     )
 }
