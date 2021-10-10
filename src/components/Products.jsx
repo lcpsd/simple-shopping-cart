@@ -15,7 +15,7 @@ export function Products(){
 
 
     return(
-        <div>
+        <div id="products">
             {  
                 productList.length ? 
                 productList.map(product => {

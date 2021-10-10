@@ -1,6 +1,7 @@
 import useCart from "../hooks/useCart"
 import {ButtonAdd} from '../components/ButtonAdd'
 import { useState } from "react"
+import '../styles/productCard.scss'
 
 export function ProductCard({product}){
 
@@ -17,16 +18,21 @@ export function ProductCard({product}){
         return window.confirm("Item já adicionado!")
     }
 
+    // function handlePreventUserKeydown(event){
+    //     event.target.value = ''
+    // }
+
     return(
-        <div>
-            <form key={product.id} onSubmit={(event) => handleSetProductToCart(event, {...product, itemQty})}>
-                <div>{product.title}</div>
-                <div>{product.description}</div>
+        <form className="product-card" onSubmit={(event) => handleSetProductToCart(event, {...product, itemQty})}>
+            <div className="product-card-info" key={product.id} >
+                <h2>{product.title}</h2>
+                <p>{product.description}</p>
                 <img src={product.thumb} alt="" />
-                <div>{product.value}</div>
-                <input type="number" onChange={event => setItemQuantity(event.target.value)} />
-                <ButtonAdd type="submit"/>
-            </form>
-        </div>
+                <div className="product-price">R${product.value}</div>
+                <input type="number" min="1" max="5"
+                onChange={event => setItemQuantity(event.target.value)} />
+            </div>
+            <ButtonAdd type="submit"/>
+        </form>
     )
 }
