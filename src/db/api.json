@@ -5,28 +5,28 @@
             "title":"PlayStation 5",
             "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper nulla in justo finibus sodales. Nulla facilisi. Vivamus sodales viverra tempus. Suspendisse a luctus metus",
             "thumb":"https://theflighter.com/wp-content/uploads/2020/04/sony-playstation-5-black-edition.jpg",
-            "value":6000.00
+            "value":600.00
         },
         {
             "id":2,
             "title":"Xbox Series X",
             "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper nulla in justo finibus sodales. Nulla facilisi. Vivamus sodales viverra tempus. Suspendisse a luctus metus",
             "thumb":"https://compass-ssl.xbox.com/assets/b9/0a/b90ad58f-9950-44a7-87fa-1ee8f0b6a90e.jpg?n=XSX_Page-Hero-0_768x792.jpg",
-            "value":5500.00
+            "value":500.00
         },
         {
             "id":3,
             "title":"Gear 5 PC Game (Fisical)",
             "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper nulla in justo finibus sodales. Nulla facilisi. Vivamus sodales viverra tempus. Suspendisse a luctus metus",
             "thumb":"https://i.ibb.co/mR9gZrv/gears5.jpg",
-            "value":500.00
+            "value":20.00
         },
         {
             "id":4,
             "title":"Horizon Forbidden West (PS4 - Fisical)",
             "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper nulla in justo finibus sodales. Nulla facilisi. Vivamus sodales viverra tempus. Suspendisse a luctus metus",
             "thumb":"https://image.api.playstation.com/vulcan/ap/rnd/202107/3100/ki0STHGAkIF06Q4AU8Ow4OkV.png",
-            "value":99.90
+            "value":25.00
         }
     ]
 }
