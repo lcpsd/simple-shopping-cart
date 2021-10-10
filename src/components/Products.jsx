@@ -22,14 +22,16 @@ export function Products(){
 
     return(
         <div id="products" onClick={()=> toggleCartVisibility()}>
-            {  
-                productList.length ? 
-                productList.map(product => {
-                        return (
-                            <ProductCard key={product.id} product={product}/>
-                        )
-                }) : <div></div>
-            }
+            <span className="container">
+                {  
+                    productList.length ? 
+                    productList.map(product => {
+                            return (
+                                <ProductCard key={product.id} product={product}/>
+                            )
+                    }) : <div></div>
+                }
+            </span>
         </div>
     )
 }
