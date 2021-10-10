@@ -1,11 +1,13 @@
 import useCart from '../hooks/useCart'
 import '../styles/sumItems.scss'
 
-export function SumItems(){
+export function SumItems({isVisible}){
 
     const {cartSum} = useCart()
 
     return(
-        <div id="sum-items">Total: R${cartSum}</div>
+        <div id="sum-items" className={isVisible}>
+            Total: R${cartSum}
+        </div>
     )
 }
