@@ -1,5 +1,6 @@
 import useCart from "../hooks/useCart"
 import {ButtonRemove} from "../components/ButtonRemove"
+import '../styles/cart.scss'
 
 export function Cart(){
     const {cartItems, cartIsVisibe, setCartItems} = useCart()
@@ -14,27 +15,35 @@ export function Cart(){
     return(
         <>
             {
-                cartIsVisibe ? 
+                cartIsVisibe ?
 
-                <div>
-                    {   
-                        cartItems.length ?
-                        cartItems.map(cartItem => {
-                                return (
-                                <form key={cartItem.id} onSubmit={
-                                    (event) => handleRemoveSelf(event, cartItem.id)
-                                }>
-                                    <h2>{cartItem.title}</h2>
-                                    <span>{cartItem.itemQty}</span>
-                                    <span>{cartItem.value}</span>
-                                    <ButtonRemove type="submit"/>
-                                </form>
-                                )
-                        }) 
-                        : 
-                        <div></div>
-                    }
-                </div>
+                <>
+                    <div id="cart-container">
+                        <h3>SHOPPING CART</h3>
+                        {   
+                            cartItems.length ?
+                            cartItems.map(cartItem => {
+                                    return (
+                                    <form key={cartItem.id} onSubmit={
+                                        (event) => handleRemoveSelf(event, cartItem.id)
+                                    }>
+                                        <h3>{cartItem.title}</h3>
+                                        <p>Quantity: {cartItem.itemQty}</p>
+                                        <span>R${cartItem.value}</span>
+                                        <ButtonRemove type="submit"/>
+                                    </form>
+                                    )
+                            }) 
+                            : 
+                            <div></div>
+                        }
+                    </div>
+
+                    <div id="cart-border">
+
+                    </div>
+                </>
+
                 :
                 <></>
             }
