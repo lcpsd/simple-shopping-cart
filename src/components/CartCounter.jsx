@@ -13,6 +13,9 @@ export function CartCounter(){
 
     return(
         <div id="cartCounter">
+            <div id="logo">
+                <span>XingLing</span> Store
+            </div>
             <span onClick={toggleCartVisibility}>
                 {cartItems.length}
                 <img src={shoppingCartIcon} alt="" />
